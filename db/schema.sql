@@ -6,5 +6,5 @@ USE radlibs_db;
 
 CREATE TABLE radlibs (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    user_input VARCHAR(255);
+    user_input VARCHAR(255)
 );

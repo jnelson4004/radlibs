@@ -1,0 +1,8 @@
+<section class="container">
+  <h3 class="radlib">{{radlib.name}}</h3>
+  <section class="flex-row justify-center">
+    {{#each radlib.stories as |story|}}
+    {{> radlib-details}}
+    {{/each}}
+  </section>
+</section>

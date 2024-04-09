@@ -1,9 +1,14 @@
 const router = require('express').Router();
 
-
-
 router.post('/', async (req, res) => {
   console.log('hello')
   });
 
-  module.exports = router;
+router.get("/", apiRoutes, async (req, res) => {
+    console.log("eat my jorts")
+  });
+
+
+router.use('/', apiRoutes);
+
+module.exports = router;

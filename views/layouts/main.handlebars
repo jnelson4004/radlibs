@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radlibs</title>
+    <link rel="stylesheet" href="/public/assets/css/style.css" />
+  </head>
+
+  <body>
+    <header>
+        <h1>RADLIBS</h1>
+        <h2>All your stories are belong to us.</h2>
+    </header>
+    <nav>
+        <a href="/">risky click of the day</a>
+    </nav>
+    <p id="paragraph">This is a paragraph with some text. Insert form data here: </p>
+    <p>kill john lennon</p>
+
+    <form id="myForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        const form = document.getElementById('myForm');
+        const paragraph = document.getElementById('paragraph');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+
+            const formText = `Name: ${name}, Email: ${email}`;
+
+            const paragraphText = paragraph.textContent;
+            const insertionIndex = paragraphText.indexOf('Insert form data here: ') + 'Insert form data here: '.length;
+
+            const updatedParagraph = paragraphText.slice(0, insertionIndex) + formText + paragraphText.slice(insertionIndex);
+
+            paragraph.textContent = updatedParagraph;
+        });
+    </script>
+  </body>
+</html>

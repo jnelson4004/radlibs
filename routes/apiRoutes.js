@@ -4,11 +4,12 @@ router.post('/', async (req, res) => {
   console.log('hello')
   });
 
-router.get("/", apiRoutes, async (req, res) => {
+router.get("/", async (req, res) => {
+  res.render('login');
     console.log("eat my jorts")
   });
 
 
-router.use('/', apiRoutes);
+
 
 module.exports = router;

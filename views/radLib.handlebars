@@ -7,15 +7,36 @@
   </section>
 </section> -->
 <body>
-  <p>i will not be having the pork soda</p>
+  <h1>the story</h1>
+  <div class="radlib-details">
+    {{> radlib-details}}
+  </div>
 
-  <script id="entry-template" type="radlib">
-    <div class="entry">
-      <h1>{{title}}</h1>
-      <div class="body">
-        {{body}}
-      </div>
-    </div>
+  <script>
+    const generateMarkdown = require("/partials/radlib-details.handlebars");
+
+    function writeToFile(filePath, answers) {
+    console.log("Output Data:", answers)
+    const template = generateMarkdown(answers)
+    fs.writeFile(filePath, template, function (err) {
+    if (err) {
+        return console.error(err);
+        }   
+    });
+    console.log("Data has been written to the file successfully!");
+  };
+
+  function init() {
+      inquirer.prompt(questions).then(answers => {
+          // console.log(answers);
+          writeToFile("answers.md", answers);
+      });
+  };
+
+  // Function call to initialize app
+
+  init();
   </script>
+
 </body>
 

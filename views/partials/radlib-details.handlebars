@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madlib Generator</title>
+</head>
+<body>
+    <h1>Radlib Generator</h1>
+    <form id="radlibForm">
+        <label for="noun">Enter a noun:</label>
+        <input type="text" id="noun" name="noun">
+        <br>
+        <label for="adjective">Enter an adjective:</label>
+        <input type="text" id="adjective" name="adjective">
+        <br>
+        <label for="verb">Enter a verb:</label>
+        <input type="text" id="verb" name="verb">
+        <br>
+        <button type="submit">Generate Radlib</button>
+    </form>
+
+    <div id="madlibOutput">
+        <!-- Madlib will be inserted here -->
+    </div>
+
+    <script id="radlibTemplate" type="text/x-handlebars-template">
+        <p>There was once a cat named Ashewell, who's fur was {{adjective}} grey. She loves playing with her favorite toy the {{noun}}. When no one is looking you can catch her{{verb}} with the neighborhood cats.</p>
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+    <script src="madlib.js"></script>
+</body>
+</html>
+

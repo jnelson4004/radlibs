@@ -6,6 +6,7 @@
     {{/each}}
   </section>
 </section> -->
+<!--
 <body>
   <p>Type in your answers below.</p>
 
@@ -17,5 +18,61 @@
       </div>
     </div>
   </script>
-</body>
+</body> 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radlib Generator</title>
+</head>
+<body>
+    <h1>Radlib Generator</h1>
+    <form id="radlibForm">
+        <label for="noun">Enter a noun:</label>
+        <input type="text" id="noun" name="noun">
+        <br>
+        <label for="adjective">Enter an adjective in ly:</label>
+        <input type="text" id="adjective" name="adjective">
+        <br>
+        <label for="verb">Enter a verb in ly:</label>
+        <input type="text" id="verb" name="verb">
+        <br>
+        <button type="submit">Generate Radlib</button>
+    </form>
 
+    <div id="radlibOutput">
+        <!-- Radlib will be inserted here -->
+    </div>
+
+    <script id="radlibTemplate" type="text/x-handlebars-template">
+        <p>There was once a cat named Ashewell, who's fur was {{adjective}} grey. She loves playing with her favorite toy the {{noun}}. When no one is looking you can catch her{{verb}} with the neighborhood cats.</p>
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.getElementById('radlibForm');
+            const template = document.getElementById('radlibTemplate').innerHTML;
+            const output = document.getElementById('radlibOutput');
+
+            form.addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                const formData = new FormData(form);
+                const data = {};
+                formData.forEach((value, key) => {
+                    data[key] = value;
+                });
+
+                const compiledTemplate = Handlebars.compile(template);
+                const radlib = compiledTemplate(data);
+                output.innerHTML = radlib;
+            });
+        });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+    <script src="madlib.js"></script>
+</body>
+</html>

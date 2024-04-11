@@ -1,7 +1,6 @@
 const router = require('express').Router();
-const fs = require("fs");
+// const fs = require("fs");
 
-import fs from "fs";
 
 router.post('/', async (req, res) => {
   console.log('hello');

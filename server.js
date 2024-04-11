@@ -8,7 +8,7 @@ const apiRoutes = require('./routes/apiRoutes.js');
 const auth = require("./utils/auth.js");
 // const routes = require('./controllers');
 
-const sequelize = require('./config/connection');
+const sequelize = require('./config/connection.js');
 const helpers = require('./utils/helpers.js');
 
 const app = express();

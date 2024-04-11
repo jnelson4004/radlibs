@@ -2,9 +2,7 @@
 ![Github license](https://img.shields.io/badge/license-mit-blue.svg)
 
 ## Description
-
-
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+Our RadLib generator is platform where you can create fun fill-in-the-blank word games from a variety of different stories. The website provides users with a short story or paragraph with certain words removed so that the user can input their own nouns, verbs, and adjectives to complete the story. Once the blanks are filled the user can hit the generate button to read the masterpiece they've created! Here is a reference where we had our inspiration from. (https://www.madlibs.com/)
 
 ## Visuals
 Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
@@ -13,13 +11,14 @@ The following image shows the web application's appearance. You can also go to t
 ![The REPO NAME includes DESCRIBE THE APP PAGE.](./assets/images/INSERT-PIC-FILE-NAME-HERE.png)
 
 ## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+Our installation process is as simple as clicking on our websites link navigation you to our project Radlibs! From there you can create your login information and start having fun!
+
 
 ## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+Our online platform is simple to use. You will start by putting in your email address and password, creating your account so that you can have access to the stories you have created. Then you will taken to our Radlib generator page where you will insert your choices of words that fill in the blanks for verbs, adjectives, and nouns. Finally, you will hit the generate button and your story will appear completed successfully.
 
 ## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+For any support and updates on the website you may go to our github Radlib repo.(https://github.com/jnelson4004/radlibs)
 
 ## Roadmap
 Ideas for releases in the future:
@@ -28,10 +27,10 @@ Ideas for releases in the future:
 - 
 
 ## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
+Our Authors are Jack Nelson, Chelle Wood, and Eddie Montoya. Notible contributers are © 2024 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved, Torre Taylor(Instructo), Walter Perry(TA), Benicio Lopez(TA), ChatGPT, edX, activity 22-Stu_MVC-Review, homeRoutes.js code edX, activity 23-Ins_Auth-Review for login code for user with email and pw
 
 ## License
 MIT License
 
 ## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+Our project is still a work in progress and will be updated as soon as possible. We run into struggles like being able to deploy our project onto Heroku, getting the nouns, verbs, and adjectives to correspond to our blanks within our Radlib stories.

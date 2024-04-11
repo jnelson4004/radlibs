@@ -5,10 +5,11 @@ const exphbs = require('express-handlebars');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const apiRoutes = require('./routes/apiRoutes.js');
+const auth = require("./utils/auth.js");
 // const routes = require('./controllers');
 
 const sequelize = require('./config/connection');
-const helpers = require('./utils/helpers');
+const helpers = require('./utils/helpers.js');
 
 const app = express();
 const PORT = process.env.PORT || 3001;

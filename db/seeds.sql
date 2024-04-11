@@ -8,5 +8,9 @@
 
 
 INSERT INTO radlibs (id, adjective, noun, verb, adverb) 
-VALUES
-    (1, 'big', 'dog', 'ran', 'quickly');
+ VALUES (1, 'big', 'dog', 'ran', 'quickly'),
+        (2, 'happy', 'cat', 'jumped', 'playfully'),
+        (3, 'loud', 'bird', 'sang', 'beautifully');
+    
+
+
